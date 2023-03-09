@@ -8,6 +8,16 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - my_name: 
+    use_entities: 
+      - name
+  - mobile_number:
+    use_entities: 
+      - number
+
+entities: 
+  - name
+  - number
 
 responses:
   utter_greet:
@@ -29,6 +39,20 @@ responses:
   utter_iamabot:
   - text: "Tôi là một bot, được cung cấp bởi Rasa."
 
+  utter_provide_info:
+  - text: "Bạn có muốn cung cấp thông tin cho chúng tôi được không ?"
+
+  utter_name: 
+  - text: "Tôi tên là Voldermort"
+  
+  utter_my_name: 
+  - text: "Tên bạn là gì ?"
+
+  utter_mobile_number: 
+  - text: "Số điện thoại của bạn là số mấy ?"
+
+  utter_thanks: 
+  - text: "Cám ơn vì đã cung cấp thông tin"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

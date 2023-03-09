@@ -28,3 +28,21 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+
+- story: happy name path
+  steps:
+  - intent: info
+  - action: utter_provide_info
+  - action: affirm
+  - intent: tell_name
+  - action: utter_name
+  - action: utter_my_name
+  - intent: my_name
+    entities: 
+    - name: "vũ"
+  - action: utter_mobile_number
+  - intent: mobile_number
+    entities: 
+    - number: "0989793085"
+  - action: utter_thanks

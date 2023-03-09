@@ -23,10 +23,13 @@ I- installing rasa
 >conda deactivate
 >conda create -n rasaenv
 >conda activate rasaenv
+>conda install ujson
+>conda install tensorflow
 >pip install rasa
 >rasa init
 (install in current directory)
 
+>conda info --envs
 
 II- to communicate with rasa in cmd
 >rasa shell
