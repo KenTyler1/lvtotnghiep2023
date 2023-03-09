@@ -89,3 +89,14 @@ stories:
       bạn có phải robot không?
     intent: bot_challenge
   - action: utter_iamabot
+
+- story: happy path 1
+  steps:
+  - user: |
+      xin chào!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      tuyệt vời
+    intent: mood_great
+  - action: utter_happy
